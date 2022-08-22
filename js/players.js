@@ -44,9 +44,7 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const coachCost = parseFloat(coachCostField.value);
     const playerscostForHireField = document.getElementById('players-cost');
     const playerscostForHire = parseFloat(playerscostForHireField.innerText);
-
     const costTotal = playerscostForHire + managerCost + coachCost;
-    console.log(costTotal);
     const totalField = document.getElementById('total');
     totalField.innerText = costTotal;
 
