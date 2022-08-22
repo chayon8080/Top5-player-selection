@@ -7,9 +7,10 @@ function getPlayerName(btnId, textId) {
         const li1 = document.createElement('li');
         li1.innerText = nameOfPlayer;
         inputName.appendChild(li1);
-        let numb = inputName.childNodes.length;
-        if (numb > 6) {
+        let playersNumber = inputName.childNodes.length;
+        if (playersNumber > 6) {
             alert('you have already selected 5 players');
+            inputName.removeChild(li1);
         }
         else {
             return;
