@@ -35,6 +35,12 @@ document.getElementById('perPlayer-cost-btn').addEventListener('click', function
     const playersExpences = costValue * selectedPlayersCost;
     const playersCostFeild = document.getElementById('players-cost');
     playersCostFeild.innerText = playersExpences;
+    if (isNaN(costValue)) {
+        alert('Please Enter a Number');
+        playersCostFeild.innerText = '';
+        perPlayerCost.value = '';
+    }
+
 })
 
 document.getElementById('calculate-total').addEventListener('click', function () {
@@ -47,6 +53,18 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const costTotal = playerscostForHire + managerCost + coachCost;
     const totalField = document.getElementById('total');
     totalField.innerText = costTotal;
+    if (isNaN(managerCost)) {
+        alert('Please Enter a Number');
+        totalField.innerText = '';
+        managerCostField.value = '';
+
+    }
+    if (isNaN(coachCost)) {
+        alert('Please Enter a Number');
+        totalField.innerText = '';
+        coachCostField.value = '';
+
+    }
 
 })
 
