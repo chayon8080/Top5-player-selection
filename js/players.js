@@ -3,13 +3,17 @@ function getPlayerName(btnId, textId) {
         document.getElementById(btnId).disabled = 'true';
         const nameOfPlayerField = document.getElementById(textId)
         const nameOfPlayer = nameOfPlayerField.innerText;
-        const inputName = document.getElementById('serial-inputName');//ol er moddhe li call korte hobe
+        const inputName = document.getElementById('serial-inputName');
         const li1 = document.createElement('li');
         li1.innerText = nameOfPlayer;
         inputName.appendChild(li1);
-        const li2 = document.createElement('li');
-        li2.innerText = nameOfPlayer;
-
+        let numb = inputName.childNodes.length;
+        if (numb > 6) {
+            alert('you have already selected 5 players');
+        }
+        else {
+            return;
+        }
     })
 }
 const messi = getPlayerName('call-messi', 'messi');
