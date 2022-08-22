@@ -28,4 +28,28 @@ const marcelo = getPlayerName('call-marcelo', 'marcelo');
 
 
 
+document.getElementById('perPlayer-cost-btn').addEventListener('click', function () {
+    const perPlayerCost = document.getElementById('perPlayer-cost');
+    const costValue = perPlayerCost.value;
+    const selectedPlayersCost = document.getElementById('serial-inputName').childNodes.length - 1;
+    const playersExpences = costValue * selectedPlayersCost;
+    const playersCostFeild = document.getElementById('players-cost');
+    playersCostFeild.innerText = playersExpences;
+})
+
+document.getElementById('calculate-total').addEventListener('click', function () {
+    const managerCostField = document.getElementById('manager-cost');
+    const managerCost = parseFloat(managerCostField.value);
+    const coachCostField = document.getElementById('coach-cost');
+    const coachCost = parseFloat(coachCostField.value);
+    const playerscostForHireField = document.getElementById('players-cost');
+    const playerscostForHire = parseFloat(playerscostForHireField.innerText);
+
+    const costTotal = playerscostForHire + managerCost + coachCost;
+    console.log(costTotal);
+    const totalField = document.getElementById('total');
+    totalField.innerText = costTotal;
+
+})
+
 
