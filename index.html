@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top5-players-selector</title>
+
+    <!-- bootstrap link connetion for css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Google font link for connetion -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Finlandica:ital,wght@1,500&family=Gulzar&family=Poppins:wght@500&display=swap');
+    </style>
+
+    <!-- css file connection             -->
+    <link rel="stylesheet" href="/style.css/players.css">
+</head>
+
+<body style="background-color: #b2afaf;">
+    <header class="p-3 mb-2  text-white text-center" style="height: 500px; background-color: black;">
+        <img class="image-header1 rounded" src="images/header 1.png" alt="">
+        <img class="image-header4 rounded" src="images/header 4.jpg" alt="">
+        <img class="image-header2 rounded" src="images/header2.jpg" alt="">
+        <img class="image-header3" src="images/header 3.png" alt="">
+        <h1 id="header-title">Select Top 5 players</h1>
+        <p>Choice favourite the top 5 players from given below. <br>
+            Where are the information about players are given.</p>
+    </header>
+    <!-- card section start -->
+    <section>
+        <div class="row row-cols-3 row-cols-md-4 g-4 text-center">
+            <div class="col">
+                <div class="card bg">
+                    <img src="Images/messi.jpg" class="card-img-top img-size img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 id="messi" class="card-title text-white">Lionel Messi</h5>
+                        <p class="card-text text-white">Age:35 years</p>
+                        <button id="call-messi" type="button" class="btn btn-primary">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg">
+                    <img src="Images/neymar jr.jpg" class="card-img-top img-size img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 id="neymar" class="card-title text-white">Neymar Jr</h5>
+                        <p class="card-text text-white">Age:30 years</p>
+                        <button id="call-neymar" type="button" class="btn btn-primary">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Images/Ozil.jpg" class="card-img-top img-size img-fluid" alt="...">
+                    <div class="card-body bg">
+                        <h5 id="ozil" class="card-title text-white">Mesut Özil</h5>
+                        <p class="card-text text-white">Age:33 years</p>
+                        <button id="call-ozil" type="button" class="btn btn-primary">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg">
+                    <div class="card-body" style="height:490px;">
+                        <h5 class="card-title fs-2 fw-bold mt-5 text-white">Select-5 players</h5>
+                        <p class="card-text">
+                        <ol id="serial-inputName" class="text-white" type=1>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg">
+                    <img src="Images/ronaldo.jpg" class="card-img-top img-size img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 id="ronaldo" class="card-title text-white">Cristiano Ronaldo</h5>
+                        <p class="card-text text-white">Age:37 years</p>
+                        <button id="call-ronaldo" type="button" class="btn btn-primary">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg">
+                    <img src="Images/luis.jpg" class="card-img-top img-size img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 id="luis" class="card-title text-white">Luis Suárez</h5>
+                        <p class="card-text text-white">Age:35 years</p>
+                        <button id="call-luis" type="button" class="btn btn-primary">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg">
+                    <img src="Images/Marcelo.jpg" class="card-img-top img-size img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 id="marcelo" class="card-title text-white">Marcelo Vieira</h5>
+                        <p class="card-text text-white">Age:34 years</p>
+                        <button id="call-marcelo" type="button" class="btn btn-primary">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg">
+                    <div class="card-body" style=" height:490px;">
+                        <h5 class="card-title fs-2 fw-bold text-white">Budget</h5>
+                        <div class="display-players">
+                            <p class="card-tex text-white">per players</p>
+                            <input type="text" class="input-sizing" style="height: 30px;" id="">
+                        </div>
+                        <button type="button" class="btn btn-primary">Calculate</button>
+                        <div class="d-flex flex-row text-white">
+                            <p>Player Expenses
+                            <p class="ammount-section">$ <span>5000</span></p>
+                            </p>
+                        </div>
+                        <div class="display-players text-white">
+                            <p class="card-tex mt-5">Manager</p>
+                            <input type="text" class="input-sizing" style="height: 30px;" id="">
+                        </div>
+                        <div class="display-players text-white">
+                            <p class="card-tex mt-5">Coach</p>
+                            <input type="text" class="input-sizing" style="height: 30px;" id="">
+                        </div>
+                        <button type="button" class="btn btn-primary">Calculate</button>
+                        <div class="d-flex flex-row text-white" style="margin-top: -30px;">
+                            <p>Total
+                            <p class="ammount-section-total" style="color:red;">$ <span>10000</span></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- card section end -->
+
+    <!-- footer section start -->
+    <div class="card-footer">
+        <hr>
+        <small class="text-muted">Copyright @ 2022 All Rights Reserved.</small>
+    </div>
+    <!-- footer section end -->
+
+    <!-- bootstrap link connetion for js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <!-- js file connetion    -->
+    <script src="js/players.js"></script>
+</body>
+
+</html>
